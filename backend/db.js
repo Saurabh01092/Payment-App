@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const db_url = require('./db_url');
 
-mongoose.connect('mongodb+srv://saurabh011815:Saroj1274*@cluster0.yazkz1n.mongodb.net/');
+mongoose.connect(db_url);
 
 const userSchema = new mongoose.Schema({
     username: {
